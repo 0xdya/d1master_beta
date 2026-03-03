@@ -455,5 +455,22 @@
 <script>
   AOS.init();
 </script>
+<script type="module">
+ 
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-analytics.js";
+  const firebaseConfig = {
+    apiKey: "AIzaSyBPHSQIAlUM5CiZB0g6nAwg-W_Bq08iEH4",
+    authDomain: "d1master.firebaseapp.com",
+    projectId: "d1master",
+    storageBucket: "d1master.firebasestorage.app",
+    messagingSenderId: "1010755479108",
+    appId: "1:1010755479108:web:ec5cb9e632e649b8833e11",
+    measurementId: "G-13D7VQB07Z"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
   </body>
 </html>

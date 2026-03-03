@@ -61,7 +61,7 @@ body.dark-theme {
   --lord-icon-primary: #e0e0e0;
   --mark: transparent;
   --scrollbar-border: 1px;
-/*========== Apple ==========*/
+
 --apple-buton: #0071e3;
 --apple-green: #01d959;
 --apple-text-title: #f5f5f7;
@@ -120,10 +120,6 @@ button {
 }
 
 
-/*========== 
-	Color changes in some parts of 
-	the website, in dark theme
-==========*/
 .dark-theme .sidebar__content::-webkit-scrollbar {
   background-color: hsl(228, 16%, 30%);
 }
@@ -780,7 +776,7 @@ button {
 
   .sidebar {
     left: 0;
-    width: 90px; /* العرض الافتراضي للشريط الضيق */
+    width: 90px; 
     margin: 1rem;
     transition: width .4s;
   }
@@ -789,7 +785,7 @@ button {
     }
   .sidebar__info, 
   .sidebar__link span {
-    opacity: 0; /* الشريط الضيق لا يعرض النص */
+    opacity: 0; 
     transition: opacity .4s;
   }
   .sidebar__user{
@@ -804,39 +800,39 @@ button {
     margin-inline: auto;
   }
 
-  /* Add padding left */
+
   .left-pd {
     padding-left: 340px;
   }
 
   .sidebar__actions {
-    opacity: 0; /* الإعدادات الافتراضية للشريط الضيق */
+    opacity: 0;
   }
 
   .neo-card {
     min-width: 700px;
   }
 
-  /* عند إضافة فئة show-sidebar */
+
   .show-sidebar {
-    width: 316px; /* توسع الشريط الجانبي */
+    width: 316px; 
   }
   .show-sidebar .header {
     margin: 1rem;
-    padding-left: 400px; /* تكون القيمة الافتراضية للشريط الضيق */
+    padding-left: 400px; 
     transition: padding .4s;
   }
   .show-sidebar .sidebar__user {
     padding-left: 1.25rem;
   }
 .show-sidebar .sidebar__title {
-  padding-left: 1.25rem; /* إضافة حشو من الجهة اليسرى */
-  margin-inline: 1rem; /* إزالة أي هوامش موجودة */
-  text-align: left; /* محاذاة النص إلى اليسار */
+  padding-left: 1.25rem; 
+  margin-inline: 1rem; 
+  text-align: left; 
 }
   .show-sidebar .sidebar__info, 
   .show-sidebar .sidebar__link span {
-    opacity: 1; /* يعرض النص عند توسيع الشريط الجانبي */
+    opacity: 1; 
   }
   .show-sidebar .sidebar__actions {
     opacity: 1;
@@ -847,21 +843,20 @@ button {
   border-radius: 6px; 
   border: var(--scrollbar-border) solid var(--body-text-color);
 }
-/* Preloader Styles */
+
 #preloader {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: hsl(228, 100%, 99%); /* اللون الخلفي أثناء التحميل */
+  background-color: hsl(228, 100%, 99%); 
   z-index: 9999;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/*  loader  */ 
 .loader {
   --ANIMATION-DELAY-MULTIPLIER: 70ms;
   padding: 0;
@@ -916,8 +911,6 @@ button {
   }
 }
 
-
-/* truck upper */
 .truckWrapper {
   width: 200px;
   height: 100px;
@@ -928,14 +921,13 @@ button {
   justify-content: flex-end;
   overflow-x: hidden;
 }
-/* truck upper body */
 .truckBody {
   width: 130px;
   height: fit-content;
   margin-bottom: 6px;
   animation: motion 1s linear infinite;
 }
-/* truck suspension animation*/
+
 @keyframes motion {
   0% {
     transform: translateY(0px);
@@ -947,7 +939,7 @@ button {
     transform: translateY(0px);
   }
 }
-/* truck's tires */
+
 .truckTires {
   width: 130px;
   height: fit-content;
@@ -1116,19 +1108,19 @@ mark {
             width: 100%;
         }
         .keyword {
-            color: #E730CA; /* لون الكلمات الرئيسية مثل function و while */
+            color: #E730CA; 
         }
         .function {
-            color: #00BFFF; /* لون اسم الدالة */
+            color: #00BFFF; 
         }
         .string {
-            color: #32CD32; /* لون النصوص داخل الأقواس */
+            color: #32CD32;
         }
         .comment {
-            color: #A9A9A9; /* لون التعليقات */
+            color: #A9A9A9;
         }
         .variable {
-            color: #FFD700; /* لون المتغيرات */
+            color: #FFD700;
         }
         .underline{
           text-decoration: wavy underline red;
